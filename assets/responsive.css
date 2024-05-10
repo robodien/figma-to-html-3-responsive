@@ -7,17 +7,20 @@
 
 /* Tablet & Mobile */
 @media (max-width: 991.98px) {
+    /* 1. ẩn navbar trên tablet và mobile */
     .navbar{
         display: none;
     }
     .header-top{
         position: relative;
     }
+    /* 2. chuyển logo vào giữa */
     .header__logo{
         position: absolute;
         left: 50%;
         translate: -50% -50%;
     }
+    /*3. căn lại vị trí của menu icon */
     .menu-header__icon{
         position: absolute;
         top: 38px;
@@ -26,6 +29,7 @@
         width: 24px;
         cursor: pointer;
     }
+    /* 4. overlay */
     .menu-overlay{
         position: fixed;
         background: rgba(0, 0, 0, 0.3);
@@ -35,10 +39,12 @@
         visibility: hidden;
         transition: 0.25s;
     }
+    /* 5. kiểm tra nếu checkbox được check thì hiện overlay */
     .menu-checkbox:checked~ .menu-overlay{
         opacity: 1;
         visibility: visible;
     }
+    /* 6. code cho menu drawer */
     .menu-drawer{
         position: fixed;
         background-color: #2e1919;
@@ -48,9 +54,11 @@
         transition: 0.5s;
         padding: 60px;
     }
+    /* 7. kiểm tra nếu checkbox được check hiện menu */
     .menu-checkbox:checked ~ .menu-drawer{
         transform: translateX(0);
     }
+    /* 8. menu top */
     .close__menu{
         width: 24px;
         color: #fff;
@@ -72,6 +80,40 @@
     .navbar__link:hover{
         background-color: #00ffff37;
     }
+
+    /* hero */
+    .hero{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .hero__content{
+        order: 2;
+        width: 80%;
+        text-align: center;
+        margin: 22px auto;
+    }
+    .hero__media{
+        order: 1;
+    }
+    .hero_row{
+        justify-content: center;
+    }
+    /* service */
+    .service__row{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .service__img{
+        width: 100%
+    }
+    .service__list{
+        text-align: center;
+    }
+    .service-item{
+        width: 90%;
+        text-align: start;
+    }
+
 }
 
 /* Tablet */
@@ -83,6 +125,6 @@
 @media (max-width: 767.98px) {
     
 }
-.hero, .main,.footer{
+.footer{
     display: none;
 }
