@@ -119,9 +119,9 @@
             </ul>
           </nav>
           <!-- cta action -->
-          <div class="action">
-            <a href="#!" class="header__action--login">Log In</a>
-            <a href="#!" class="btn header__action--signup">Sign Up</a>
+          <div class="header__action">
+              <a href="#!" class="header__action--login">Log In</a>
+              <a href="#!" class="btn header__action--signup">Sign Up</a>
           </div>
         </div>
 
@@ -191,6 +191,18 @@
           const navMobile = document.querySelector("#navbar__list--mobile");
           navMobile.innerHTML = navPC.innerHTML;
         </script>
+        <!-- separate -->
+        <div class="separate">
+          <!-- cta action -->
+          <div class="show-on-mobile">
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Login</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Sign Up</a>
+            </li> 
+          </div>       
+        </div>
       </div>
     </div>
 

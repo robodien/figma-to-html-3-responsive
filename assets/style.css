@@ -424,7 +424,7 @@ a {
   bottom: 0;
 }
 .install__content {
-  max-width: 586px;
+  min-width: 586px;
 }
 .install__heading {
   max-width: 489px;
